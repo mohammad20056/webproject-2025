@@ -1,0 +1,44 @@
+body {
+    margin: 0;
+    font-family: Arial;}
+
+.navigatiebalk {
+    display: flex;
+    justify-content: space-between;
+    background: #333;
+    padding: 10px;
+    color: white;
+}
+
+.navigatielinks {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.navigatielinks a {
+    color: white;
+    text-decoration: none;
+}
+
+.Knop {
+    display: none;
+    cursor: pointer;
+}
+
+@media(max-width:700px){
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        background: #333;
+        position: absolute;
+        right: 10px;
+        top: 50px;
+    }
+    .nav-links.open {
+        display: flex;
+    }
+    .hamburger {
+        display: block;
+    }
+}
