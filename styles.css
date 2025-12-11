@@ -50,5 +50,12 @@ h1 {
 footer {
     display: flex;
     flex-direction: column;
-    align-items: end;
+    margin-top: 400px;
+    color: white;
+}
+
+.footerBackground {
+    padding: 20px;
+    background: rgb(3, 75, 3);
+    margin-left: 7 0px;
 }
