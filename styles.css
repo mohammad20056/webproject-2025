@@ -43,19 +43,63 @@ body {
     }
 }
 
-h1 {
+.ContactHeader {
     text-align: center;
 }
 
-footer {
-    display: flex;
-    flex-direction: column;
-    margin-top: 400px;
-    color: white;
-}
+/* FOOTER */
 
-.footerBackground {
-    padding: 20px;
-    background: rgb(3, 75, 3);
-    margin-left: 7 0px;
-}
+.footer-wrapper {
+            background-color: #283F25;
+            padding: 25px 0;
+        }
+
+        .footer-content {
+            max-width: 1400px;
+            max-height: 900px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+        }
+
+        .contact-info {
+            color: #e8f4dc;
+            font-size: 18px;
+            line-height: 2.2;
+        }
+
+        .contact-info div {
+            display: flex;
+            gap: 0;
+        }
+
+        .contact-label {
+            display: inline-block;
+            width: 110px;
+        }
+
+        .contact-separator {
+            margin: 0 10px;
+        }
+
+        .contact-value {
+            font-weight: normal;
+        }
+
+        .opening-hours {
+            text-align: right;
+            color: white;
+        }
+
+        .opening-hours h2 {
+            font-size: 42px;
+            font-weight: 300;
+            margin-bottom: 30px;
+            letter-spacing: 0.5px;
+        }
+
+        .opening-hours p {
+            line-height: 2.2;
+            font-size: 18px;
+        }
