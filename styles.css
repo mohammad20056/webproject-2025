@@ -1,6 +1,17 @@
-body {
+html, body {
+    height: 100%;
     margin: 0;
-    font-family: Arial;}
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: Arial;
+}
+
+main {
+    flex: 1;
+}
 
 .navigatiebalk {
     display: flex;
@@ -50,56 +61,63 @@ body {
 /* FOOTER */
 
 .footer-wrapper {
-            background-color: #283F25;
-            padding: 25px 0;
-        }
+    background-color: #283F25;
+    min-height: 280px; 
+    padding: 10px;        
+    display: flex;
+    align-items: center;        
+}
 
-        .footer-content {
-            max-width: 1400px;
-            max-height: 900px;
-            margin: 0 auto;
-            display: flex;
-            justify-content: space-between;
-            align-items: flex-start;
-        }
+.footer-content {
+    max-width: 1000px;          
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 120px 60px 0;            
+}
 
-        .contact-info {
-            color: #e8f4dc;
-            font-size: 18px;
-            line-height: 2.2;
-        }
+/* LEFT SIDE */
+.contact-info {
+    color: #e8f4dc;
+    font-size: 18px;
+    line-height: 1.4;
+}
 
-        .contact-info div {
-            display: flex;
-            gap: 0;
-        }
+.contact-info div {
+    display: flex;
+    margin-bottom: 6px;
+}
 
-        .contact-label {
-            display: inline-block;
-            width: 110px;
-        }
+.contact-label {
+    width: 100px;
+}
 
-        .contact-separator {
-            margin: 0 10px;
-        }
+.contact-separator {
+    margin: 0 10px;
+}
 
-        .contact-value {
-            font-weight: normal;
-        }
+/* RIGHT SIDE */
+.opening-hours {
+    color: white;
+    text-align: left;
+}
 
-        .opening-hours {
-            text-align: right;
-            color: white;
-        }
+.opening-hours h2 {
+    font-size: 42px;
+    font-weight: 300;
+    margin-bottom: 20px;
+}
 
-        .opening-hours h2 {
-            font-size: 42px;
-            font-weight: 300;
-            margin-bottom: 30px;
-            letter-spacing: 0.5px;
-        }
+.opening-hours p {
+    font-size: 18px;
+    line-height: 1.4;
+    margin-top: 6px;
+}
 
-        .opening-hours p {
-            line-height: 2.2;
-            font-size: 18px;
-        }
+.footer-wrapper p,
+.footer-wrapper h2 {
+    margin: 0;
+}
+
