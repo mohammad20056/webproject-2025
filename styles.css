@@ -136,3 +136,119 @@ main {
 .footer-wrapper h2 {
     margin: 0;
 }
+
+/* HERO SECTION */
+
+.hero-section {
+    background-image: url("images/tulip.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 420px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-text {
+    background-color: rgba(0, 0, 0, 0.35);
+    color: white;
+    padding: 40px 60px;
+    text-align: center;
+}
+
+.hero-text h1 {
+    font-size: 42px;
+    margin-bottom: 10px;
+    font-weight: 300;
+}
+
+.hero-text p {
+    font-size: 18px;
+}
+
+
+/* HIGHLIGHT TEXT */
+
+.highlight-text {
+    background-color: #4b6a46;
+    color: white;
+    text-align: center;
+    padding: 30px 10px;
+}
+
+.highlight-text h2 {
+    font-size: 28px;
+    font-weight: 300;
+    margin: 0;
+}
+
+
+/* OFFERS SECTION */
+
+.offers-section {
+    background-color: #f4f7e8;
+    padding: 60px 40px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.offer-card {
+    background-color: #eef5d8;
+    overflow: hidden;
+    text-align: center;
+}
+
+.offer-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.offer-info {
+    padding: 15px;
+}
+
+.offer-info h3 {
+    font-size: 16px;
+    margin: 0 0 5px;
+}
+
+.offer-info p {
+    font-size: 14px;
+    margin: 0;
+}
+
+
+/* ABOUT SECTION */
+
+.about-section {
+    background-color: #3f5a3c;
+    color: white;
+    display: flex;
+    padding: 80px 60px;
+    gap: 60px;
+    align-items: center;
+}
+
+.about-text {
+    max-width: 500px;
+}
+
+.about-text h2 {
+    font-size: 38px;
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+
+.about-text p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 12px;
+    text-align: center;
+}
+
+.about-image img {
+    width: 300px;
+}
