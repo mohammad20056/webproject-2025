@@ -1,4 +1,5 @@
-body {
+html, body {
+    height: 100%;
     margin: 0;
     font-family: Arial;}
 
@@ -22,15 +23,55 @@ body {
     padding: 0;
 }
 
-.navigatielinks a {
-    color: white;
-    text-decoration: none;
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: Arial;
+}
+
+main {
+    flex: 1;
+}
+
+/* HEADER */
+
+.main-header {
+    width: 100%;
+    background-color: #3f5a3c; 
     text-align: center;
 }
 
-.Knop {
-    display: none;
-    cursor: pointer;
+.header-logo {
+    padding: 25px 0 15px;
+}
+
+.header-logo img {
+    height: 90px;
+    width: auto;
+}
+
+.header-menu {
+    background-color: #2e472a; 
+    padding: 10px 0;
+}
+
+.header-menu a {
+    color: #ffffff;
+    text-decoration: none;
+    text-align: center;
+    font-size: 15px;
+    font-weight: 300;
+    margin: 0 12px;
+}
+
+.header-menu span {
+    color: #ffffff;
+    opacity: 0.7;
+}
+
+.header-divider {
+    height: 28px;
+    background-color: #d9efb7;
 }
 
 
@@ -41,3 +82,187 @@ body {
         display: block;
     }
 
+
+
+.ContactHeader {
+    text-align: center;
+}
+
+/* FOOTER */
+
+.footer-wrapper {
+    background-color: #283F25;
+    min-height: 280px; 
+    padding: 10px;        
+    display: flex;
+    align-items: center;        
+}
+
+.footer-content {
+    max-width: 1000px;          
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 120px 60px 0;            
+}
+
+/* LEFT SIDE */
+.contact-info {
+    color: #e8f4dc;
+    font-size: 18px;
+    line-height: 1.4;
+}
+
+.contact-info div {
+    display: flex;
+    margin-bottom: 6px;
+}
+
+.contact-label {
+    width: 100px;
+}
+
+.contact-separator {
+    margin: 0 10px;
+}
+
+/* RIGHT SIDE */
+.opening-hours {
+    color: white;
+    text-align: left;
+}
+
+.opening-hours h2 {
+    font-size: 42px;
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+
+.opening-hours p {
+    font-size: 18px;
+    line-height: 1.4;
+    margin-top: 6px;
+}
+
+.footer-wrapper p,
+.footer-wrapper h2 {
+    margin: 0;
+}
+
+/* HERO SECTION */
+
+.hero-section {
+    background-image: url("images/tulip.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 420px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-text {
+    background-color: rgba(0, 0, 0, 0.35);
+    color: white;
+    padding: 40px 60px;
+    text-align: center;
+}
+
+.hero-text h1 {
+    font-size: 42px;
+    margin-bottom: 10px;
+    font-weight: 300;
+}
+
+.hero-text p {
+    font-size: 18px;
+}
+
+
+/* HIGHLIGHT TEXT */
+
+.highlight-text {
+    background-color: #4b6a46;
+    color: white;
+    text-align: center;
+    padding: 30px 10px;
+}
+
+.highlight-text h2 {
+    font-size: 28px;
+    font-weight: 300;
+    margin: 0;
+}
+
+
+/* OFFERS SECTION */
+
+.offers-section {
+    background-color: #f4f7e8;
+    padding: 60px 40px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.offer-card {
+    background-color: #eef5d8;
+    overflow: hidden;
+    text-align: center;
+}
+
+.offer-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.offer-info {
+    padding: 15px;
+}
+
+.offer-info h3 {
+    font-size: 16px;
+    margin: 0 0 5px;
+}
+
+.offer-info p {
+    font-size: 14px;
+    margin: 0;
+}
+
+
+/* ABOUT SECTION */
+
+.about-section {
+    background-color: #3f5a3c;
+    color: white;
+    display: flex;
+    padding: 80px 60px;
+    gap: 60px;
+    align-items: center;
+}
+
+.about-text {
+    max-width: 500px;
+}
+
+.about-text h2 {
+    font-size: 38px;
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+
+.about-text p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 12px;
+    text-align: center;
+}
+
+.about-image img {
+    width: 300px;
+}
