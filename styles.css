@@ -1,26 +1,6 @@
 html, body {
     height: 100%;
     margin: 0;
-    font-family: Arial;}
-
-.navigatiebalk {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background: #003317;
-    padding: 20px;
-
-}
-
-#navigatielinks {
-    list-style: none;
-    justify-content: center;
-    list-style: none;
-    display: flex;
-    
-    gap: 20px;
-    margin: 0;
-    padding: 0;
 }
 
 body {
@@ -58,7 +38,6 @@ main {
 .header-menu a {
     color: #ffffff;
     text-decoration: none;
-    text-align: center;
     font-size: 15px;
     font-weight: 300;
     margin: 0 12px;
@@ -74,15 +53,22 @@ main {
     background-color: #d9efb7;
 }
 
-
+@media(max-width:700px){
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        background: #333;
+        position: absolute;
+        right: 10px;
+        top: 50px;
+    }
     .nav-links.open {
         display: flex;
     }
     .hamburger {
         display: block;
     }
-
-
+}
 
 .ContactHeader {
     text-align: center;
@@ -266,3 +252,42 @@ main {
 .about-image img {
     width: 300px;
 }
+.contact-structuur {
+  display: flex;
+  max-width: 900px;
+  margin: 40px auto;
+  gap: 60px; 
+}
+
+.contact-links {
+  width: 300px;
+}
+
+.contact-rechts {
+  width: 350px;
+}
+
+.contact-rechts textarea,
+.contact-rechts input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+.kop-contact {
+  text-align: center;
+  margin-top: 40px;
+  font-size: 28px;
+}
+
+.verzend-knop {
+  padding: 12px;
+  width: 107%;
+  background-color: #05631b; 
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 4px;
+  margin-top: 12px;
+}
+
