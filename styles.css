@@ -78,7 +78,7 @@ main {
 
 .footer-wrapper {
     background-color: #283F25;
-    min-height: 280px; 
+    min-height: 280px;
     padding: 10px;        
     display: flex;
     align-items: center;        
@@ -91,7 +91,7 @@ main {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 120px 60px 0;            
+    padding: 10px 60px 0;            
 }
 
 /* LEFT SIDE */
@@ -252,10 +252,17 @@ main {
 .about-image img {
     width: 300px;
 }
+
+/* CONTACT PAGE */
+.contact-main {
+    background-color: #05631b;
+    color: white;
+}
+
 .contact-structuur {
   display: flex;
   max-width: 900px;
-  margin: 40px auto;
+  margin: 80px auto;
   gap: 60px; 
 }
 
@@ -282,7 +289,7 @@ main {
 .verzend-knop {
   padding: 12px;
   width: 107%;
-  background-color: #05631b; 
+  background-color:rgba(46, 177, 87, 0.422); 
   color: white;
   border: none;
   cursor: pointer;
