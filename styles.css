@@ -298,7 +298,7 @@ font-size: 1.4rem;
 height: 450px;
 }
 
-/* CONTACT PAGE */
+
 .contact-main {
     background-color: #05631b;
     color: white;
@@ -308,11 +308,12 @@ height: 450px;
   display: flex;
   max-width: 900px;
   margin: 80px auto;
-  gap: 60px; 
+  gap: 50px; 
 }
 
 .contact-links {
-  width: 300px;
+ gap: auto; 
+    width: 350px;
 }
 
 .contact-rechts {
@@ -322,8 +323,8 @@ height: 450px;
 .contact-rechts textarea,
 .contact-rechts input {
   width: 100%;
-  padding: 10px;
-  margin-bottom: 10px;
+  padding: 20px;
+  margin-bottom: 30px;
 }
 .kop-contact {
   text-align: center;
