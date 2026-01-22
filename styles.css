@@ -78,7 +78,7 @@ main {
 
 .footer-wrapper {
     background-color: #283F25;
-    min-height: 280px; 
+    min-height: 280px;
     padding: 10px;        
     display: flex;
     align-items: center;        
@@ -91,7 +91,7 @@ main {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 120px 60px 0;            
+    padding: 10px 60px 0;            
 }
 
 /* LEFT SIDE */
@@ -252,6 +252,7 @@ main {
 .about-image img {
     width: 300px;
 }
+<<<<<<< HEAD
 .assortiment {
     padding: 40px;
     background-color: #f7f9e8;
@@ -297,3 +298,51 @@ font-size: 1.4rem;
 .product.featured img {
 height: 450px;
 }
+=======
+
+/* CONTACT PAGE */
+.contact-main {
+    background-color: #05631b;
+    color: white;
+}
+
+.contact-structuur {
+  display: flex;
+  max-width: 900px;
+  margin: 80px auto;
+  gap: 60px; 
+}
+
+.contact-links {
+  width: 300px;
+}
+
+.contact-rechts {
+  width: 350px;
+}
+
+.contact-rechts textarea,
+.contact-rechts input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+.kop-contact {
+  text-align: center;
+  margin-top: 40px;
+  font-size: 28px;
+}
+
+.verzend-knop {
+  padding: 12px;
+  width: 107%;
+  background-color:rgba(46, 177, 87, 0.422); 
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 4px;
+  margin-top: 12px;
+}
+
+>>>>>>> ba3f594847ae027cb9a28d82ce300c661d829cc2
