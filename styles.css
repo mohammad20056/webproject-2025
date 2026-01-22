@@ -151,7 +151,6 @@ main {
 }
 
 .hero-text {
-    background-color: rgba(0, 0, 0, 0.35);
     color: white;
     padding: 40px 60px;
     text-align: center;
@@ -252,7 +251,7 @@ main {
 .about-image img {
     width: 300px;
 }
-<<<<<<< HEAD
+/* HEAD */
 .assortiment {
     padding: 40px;
     background-color: #f7f9e8;
@@ -298,7 +297,6 @@ font-size: 1.4rem;
 .product.featured img {
 height: 450px;
 }
-=======
 
 /* CONTACT PAGE */
 .contact-main {
@@ -344,5 +342,3 @@ height: 450px;
   border-radius: 4px;
   margin-top: 12px;
 }
-
->>>>>>> ba3f594847ae027cb9a28d82ce300c661d829cc2
