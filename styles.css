@@ -306,18 +306,24 @@ height: 450px;
 
 .contact-structuur {
   display: flex;
+  align-items: stretch;
   max-width: 900px;
   margin: 80px auto;
   gap: 50px; 
 }
 
-.contact-links {
- gap: auto; 
+.contact-links { 
+ 
     width: 350px;
 }
 
 .contact-rechts {
   width: 350px;
+  display: flex;
+  flex-direction: column;
+}
+.contact-rechts textarea {
+flex: 1;    
 }
 
 .contact-rechts textarea,
