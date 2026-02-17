@@ -3,5 +3,5 @@ Teamleden:
 - Mohammad
 - Leroy
 - Renzo
-- Lucas
+- Said
 Doel: Een volledige responsieve website met 3 pagina's: Home, Assortiment, Contact.
