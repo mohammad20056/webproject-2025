@@ -1,7 +1,7 @@
 # Nora's Flora Website
 Teamleden:
 - Mohammad
-- Said
+- Leroy
 - Renzo
-
+- Lucas
 Doel: Een volledige responsieve website met 3 pagina's: Home, Assortiment, Contact.
