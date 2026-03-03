@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 const plants = [
   {
     id: 1,
@@ -19,7 +18,6 @@ const plants = [
     image: "images/cactus.jpg"
   }
 ];
-=======
 const planten = [
   {
     naam: "cactus",
@@ -51,4 +49,3 @@ planten.forEach(plant => {
 
   container.appendChild(plantCard);
 });
->>>>>>> 302d48ee644b027b2db8895b57a01b537f7e30e7

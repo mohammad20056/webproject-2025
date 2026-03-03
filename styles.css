@@ -264,14 +264,14 @@ main {
     margin-bottom: 30px;
 }
 .assortiment-grid {
-display: grid;
-grid-template-columns: repeat(3, 1fr);
-gap: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
 }
 .product {
-background-color: #dff0c2;
-border-radius: 15px;
-text-align: center;
+    background-color: #dff0c2;
+    border-radius: 15px;
+    text-align: center;
 }
 .product img {
     width: 100%;
