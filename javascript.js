@@ -1,3 +1,25 @@
+<<<<<<< HEAD
+const plants = [
+  {
+    id: 1,
+    name: "Monstera",
+    price: 24.99,
+    image: "images/monstera.jpg"
+  },
+  {
+    id: 2,
+    name: "Ficus",
+    price: 19.99,
+    image: "images/ficus.jpg"
+  },
+  {
+    id: 3,
+    name: "Cactus",
+    price: 9.99,
+    image: "images/cactus.jpg"
+  }
+];
+=======
 const planten = [
   {
     naam: "cactus",
@@ -29,3 +51,4 @@ planten.forEach(plant => {
 
   container.appendChild(plantCard);
 });
+>>>>>>> 302d48ee644b027b2db8895b57a01b537f7e30e7
