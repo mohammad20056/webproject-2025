@@ -264,15 +264,21 @@ main {
     margin-bottom: 30px;
 }
 .assortiment-grid {
+<<<<<<< HEAD
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
   gap: 20px;
   align-items: stretch;
+=======
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+>>>>>>> e6a9ac13930b2387597d572663b506b82ff239dd
 }
 .product {
-background-color: #dff0c2;
-border-radius: 15px;
-text-align: center;
+    background-color: #dff0c2;
+    border-radius: 15px;
+    text-align: center;
 }
 .product img {
     width: 100%;
