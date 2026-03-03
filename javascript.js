@@ -1,18 +1,18 @@
 const planten = [
   {
-    naam: "",
-    prijs: ,
-    afbeelding: ""
+    naam: "cactus",
+    prijs: 5.99,
+    afbeelding: "images/cacti.jpg"
   },
   {
-    naam: "",
-    prijs: ,
-    afbeelding: ""
+    naam: "zonnebloem",
+    prijs: 7.50,
+    afbeelding: "images/zonnebloemen.jpg"
   },
   {
-    naam: "",
-    prijs: ,
-    afbeelding: ""
+    naam: "rode tulpen",
+    prijs: 3.99,
+    afbeelding: "images/rodetulpen.jpg"
   }
 ];
 const container = document.getElementById("assortiment");
