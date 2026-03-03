@@ -264,9 +264,10 @@ main {
     margin-bottom: 30px;
 }
 .assortiment-grid {
-display: grid;
-grid-template-columns: repeat(3, 1fr);
-gap: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 20px;
+  align-items: stretch;
 }
 .product {
 background-color: #dff0c2;
@@ -344,15 +345,65 @@ height: 450px;
   border-radius: 4px;
   margin-top: 12px;
 }
-.assortiment {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-  gap: 20px;
-}
+
 
 .plant-card img {
   width: 100%;
-  height: 200px;        /* vaste hoogte */
-  object-fit: cover;    /* voorkomt uitrekken */
+  height: 200px;        
+  object-fit: cover;    
+  border-radius: 8px;
+
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f8f2;
+  margin: 0;
+  padding: 20px;
+}
+
+#assortiment {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.plant-card {
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  padding: 15px;
+  text-align: center;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+
+.plant-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
   border-radius: 8px;
 }
+
+
+.plant-card h2 {
+  font-size: 1.2rem;
+  margin: 10px 0 5px;
+  color: #000000;
+  text-transform: capitalize;
+}
+
+
+.plant-card p {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #4caf50;
+}
+.assortiment-card img {
+  width: 100%;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 6px;
+  margin-bottom: 8px;
+}
+

@@ -1,42 +1,21 @@
-<<<<<<< HEAD
-const plants = [
-  {
-    id: 1,
-    name: "Monstera",
-    price: 24.99,
-    image: "images/monstera.jpg"
-  },
-  {
-    id: 2,
-    name: "Ficus",
-    price: 19.99,
-    image: "images/ficus.jpg"
-  },
-  {
-    id: 3,
-    name: "Cactus",
-    price: 9.99,
-    image: "images/cactus.jpg"
-  }
-];
-=======
 const planten = [
   {
     naam: "cactus",
     prijs: 5.99,
-    afbeelding: "images/cacti.jpg"
+    afbeelding: "cactus.jpg"
   },
   {
     naam: "zonnebloem",
     prijs: 7.50,
-    afbeelding: "images/zonnebloemen.jpg"
+    afbeelding: "zonnebloem.jpg"
   },
   {
     naam: "rode tulpen",
     prijs: 3.99,
-    afbeelding: "images/rodetulpen.jpg"
+    afbeelding: "images/download.jpg"
   }
 ];
+
 const container = document.getElementById("assortiment");
 
 planten.forEach(plant => {
@@ -51,4 +30,3 @@ planten.forEach(plant => {
 
   container.appendChild(plantCard);
 });
->>>>>>> 302d48ee644b027b2db8895b57a01b537f7e30e7
