@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 const plants = [
   {
     id: 1,
@@ -20,17 +18,16 @@ const plants = [
     image: "images/cactus.jpg"
   }
 ];
->>>>>>> e6a9ac13930b2387597d572663b506b82ff239dd
 const planten = [
   {
     naam: "cactus",
     prijs: 5.99,
-    afbeelding: "cactus.jpg"
+    afbeelding: "images/cactus.jpg"
   },
   {
     naam: "zonnebloem",
     prijs: 7.50,
-    afbeelding: "zonnebloem.jpg"
+    afbeelding: "images/zonnebloemen.jpg"
   },
   {
     naam: "rode tulpen",
@@ -52,8 +49,4 @@ planten.forEach(plant => {
   `;
 
   container.appendChild(plantCard);
-<<<<<<< HEAD
 });
-=======
-});
->>>>>>> e6a9ac13930b2387597d572663b506b82ff239dd
