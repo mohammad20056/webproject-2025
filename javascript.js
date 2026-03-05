@@ -1,26 +1,3 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-const planten = [
-  {
-    naam: "cactus",
-    prijs: 5.99,
-    afbeelding: "images/cactus.jpg"
-  },
-  {
-    naam: "zonnebloem",
-    prijs: 7.50,
-    afbeelding: "images/zonnebloemen.jpg"
-  },
-  {
-    naam: "rode tulpen",
-    prijs: 3.99,
-    afbeelding: "images/rodetulpen.jpg"
-  },
-   
-];
-=======
-=======
->>>>>>> fc6bfeb65b959c514d1f5170e66dad701b019370
 const CART_STORAGE_KEY = "norasflora_cart";
 
 function loadCart() {
@@ -32,10 +9,6 @@ function loadCart() {
     return [];
   }
 }
-<<<<<<< HEAD
->>>>>>> 89217e32f6d9a89b3f78682a3b91707654b195b8
-=======
->>>>>>> fc6bfeb65b959c514d1f5170e66dad701b019370
 
 function saveCart(cartItems) {
   localStorage.setItem(CART_STORAGE_KEY, JSON.stringify(cartItems));
