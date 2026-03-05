@@ -264,10 +264,16 @@ main {
     margin-bottom: 30px;
 }
 .assortiment-grid {
+<<<<<<< HEAD
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
   gap: 20px;
   align-items: stretch;
+=======
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+>>>>>>> f5af11a229aac67bb8dba315b69b7d25af2dd2ed
 }
 .product {
     background-color: #dff0c2;
