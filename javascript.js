@@ -1,3 +1,5 @@
+<<<<<<< HEAD
+=======
 const plants = [
   {
     id: 1,
@@ -18,6 +20,7 @@ const plants = [
     image: "images/cactus.jpg"
   }
 ];
+>>>>>>> 635531e2e7a4bc719a13fc75247df34e7bcc4b67
 const planten = [
   {
     naam: "cactus",
