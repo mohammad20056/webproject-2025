@@ -1,4 +1,21 @@
 const CART_STORAGE_KEY = "norasflora_cart";
+const planten = [
+  {
+    naam: "cactus",
+    prijs: 5.99,
+    afbeelding: "images/cactus.jpg"
+  },
+  {
+    naam: "zonnebloem",
+    prijs: 7.5,
+    afbeelding: "images/zonnebloemen.jpg"
+  },
+  {
+    naam: "rode tulpen",
+    prijs: 3.99,
+    afbeelding: "images/rodetulpen.jpg"
+  }
+];
 
 function loadCart() {
   try {
@@ -123,9 +140,77 @@ function setupAssortmentPage() {
   });
 }
 
-function removeCartItem(index) {
+function renderPlanten(renderToGrid) {
+  const container = document.getElementById("assortiment");
+  const assortmentGrid = document.querySelector(".assortiment-grid");
+  const useGrid = Boolean(renderToGrid) && Boolean(assortmentGrid);
+
+  if (!container && !useGrid) {
+    return;
+  }
+
+  if (container) {
+    container.innerHTML = "";
+  }
+
+  if (useGrid) {
+    assortmentGrid.querySelectorAll(".dynamic-plant").forEach((card) => card.remove());
+  }
+
+  planten.forEach((plant) => {
+    if (container) {
+      const plantCard = document.createElement("div");
+      plantCard.classList.add("plant-card");
+      plantCard.innerHTML =
+        '<img src="' + plant.afbeelding + '" alt="' + plant.naam + '">' +
+        "<h2>" + plant.naam + "</h2>" +
+        "<p>EUR " + Number(plant.prijs).toFixed(2) + "</p>";
+      container.appendChild(plantCard);
+    }
+
+    if (useGrid) {
+      const gridCard = document.createElement("article");
+      gridCard.className = "product dynamic-plant";
+      gridCard.innerHTML =
+        '<img src="' + plant.afbeelding + '" alt="' + plant.naam + '">' +
+        "<h3>" + plant.naam + "</h3>" +
+        "<p>EUR " + Number(plant.prijs).toFixed(2) + "</p>";
+      assortmentGrid.appendChild(gridCard);
+    }
+  });
+
+  if (useGrid) {
+    setupAssortmentPage();
+  }
+}
+
+function addPlant(naam, prijs, afbeelding) {
+  if (!naam || Number.isNaN(Number(prijs))) {
+    return false;
+  }
+
+  planten.push({
+    naam: String(naam),
+    prijs: Number(prijs),
+    afbeelding: afbeelding || ""
+  });
+  renderPlanten(true);
+  return true;
+}
+
+function removeCartUnits(index, unitsToRemove) {
   const cart = loadCart();
-  cart.splice(index, 1);
+  const item = cart[index];
+  if (!item) {
+    return;
+  }
+
+  item.quantity -= unitsToRemove;
+
+  if (item.quantity <= 0) {
+    cart.splice(index, 1);
+  }
+
   saveCart(cart);
   renderCartPage();
   updateCartLinkCount();
@@ -186,13 +271,32 @@ function renderCartPage() {
       '<p class="cart-item-meta">Subtotaal: ' + formatPrice(lineTotal) + "</p>" +
       "</div>";
 
+    const controls = document.createElement("div");
+    controls.className = "remove-controls";
+
+    const removeAmountInput = document.createElement("input");
+    removeAmountInput.type = "number";
+    removeAmountInput.className = "remove-quantity-input";
+    removeAmountInput.min = "1";
+    removeAmountInput.max = String(item.quantity);
+    removeAmountInput.value = "1";
+
     const removeButton = document.createElement("button");
     removeButton.type = "button";
     removeButton.className = "remove-item-button";
-    removeButton.textContent = "Verwijderen";
-    removeButton.addEventListener("click", () => removeCartItem(index));
+    removeButton.textContent = "Verwijder aantal";
+    removeButton.addEventListener("click", () => {
+      const amount = parseInt(removeAmountInput.value, 10);
+      if (Number.isNaN(amount) || amount < 1) {
+        return;
+      }
+      const safeAmount = Math.min(amount, item.quantity);
+      removeCartUnits(index, safeAmount);
+    });
 
-    row.appendChild(removeButton);
+    controls.appendChild(removeAmountInput);
+    controls.appendChild(removeButton);
+    row.appendChild(controls);
 
     cartItemsContainer.appendChild(row);
   });
@@ -204,3 +308,5 @@ setupAssortmentPage();
 setupCartActions();
 renderCartPage();
 updateCartLinkCount();
+renderPlanten(false);
+window.addPlant = addPlant;
