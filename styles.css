@@ -264,16 +264,10 @@ main {
     margin-bottom: 30px;
 }
 .assortiment-grid {
-<<<<<<< HEAD
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
   gap: 20px;
   align-items: stretch;
-=======
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
->>>>>>> e6a9ac13930b2387597d572663b506b82ff239dd
 }
 .product {
     background-color: #dff0c2;
@@ -360,56 +354,83 @@ height: 450px;
   border-radius: 8px;
 
 }
-
-body {
-  font-family: Arial, sans-serif;
-  background-color: #f4f8f2;
+#assortiment {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+/* Algemene reset */
+* {
   margin: 0;
-  padding: 20px;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-#assortiment {
+/* Pagina lay-out */
+.assortiment {
+  padding: 2rem;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.assortiment h1 {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+/* GRID voor producten */
+.assortiment-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 20px;
+  gap: 2rem;
 }
 
-.plant-card {
-  background-color: white;
-  border-radius: 12px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
-  padding: 15px;
+/* Productkaart */
+.product {
+  background: #fff;
+  border-radius: 10px;
+  padding: 1rem;
   text-align: center;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+  transition: 0.2s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
+/* Hover effect */
+.product:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+}
 
-.plant-card img {
+/* Afbeeldingen */
+.product img {
   width: 100%;
   height: 180px;
   object-fit: cover;
   border-radius: 8px;
+  margin-bottom: 1rem;
 }
 
-
-.plant-card h2 {
-  font-size: 1.2rem;
-  margin: 10px 0 5px;
-  color: #000000;
+/* Titels */
+.product h3 {
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
   text-transform: capitalize;
 }
 
-
-.plant-card p {
-  font-size: 1rem;
+/* Prijzen */
+.product p {
   font-weight: bold;
-  color: #4caf50;
+  color: #2f7a3b;
+  font-size: 1rem;
 }
-.assortiment-card img {
-  width: 100%;
-  height: 140px;
-  object-fit: cover;
-  border-radius: 6px;
-  margin-bottom: 8px;
+
+/* Speciale producten (optioneel) */
+.product.featured {
+  border: 2px solid #2f7a3b;
+  background: #f4fff6;
 }
 
