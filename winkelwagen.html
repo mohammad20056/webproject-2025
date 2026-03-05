@@ -2,38 +2,76 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Winkelwagen</title>
   <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
-    <header class="main-header">
-  <div class="header-logo">
-    <img src="images/Nora'sFloraLogo.png" data-src="images/Nora'sFloraLogo.png" alt="Nora's Flora logo">
-  </div>
+  <header class="main-header">
+    <div class="header-logo">
+      <img src="images/Nora'sFloraLogo.png" data-src="images/Nora'sFloraLogo.png" alt="Nora's Flora logo">
+    </div>
 
-  <nav class="header-menu">
-    <a href="Hoofdpagina.html">Home</a>
-    <span>|</span>
-    <a href="Assortiment.html">Assortiment</a>
-    <span>|</span>
-    <a href="Contact.html">Contact</a>
-    <span>|</span>
-    <a href="winkelwagen.html">Winkelwagen 🛒</a>
-  </nav>
+    <nav class="header-menu">
+      <a href="Hoofdpagina.html">Home</a>
+      <span>|</span>
+      <a href="Assortiment.html">Assortiment</a>
+      <span>|</span>
+      <a href="Contact.html">Contact</a>
+      <span>|</span>
+      <a href="winkelwagen.html" class="cart-link">
+        <span class="cart-link-label">Winkelwagen</span>
+        <span class="cart-count-badge" aria-live="polite">0</span>
+      </a>
+    </nav>
 
-  <div class="header-divider"></div>
-</header>
+    <div class="header-divider"></div>
+  </header>
 
-<h1>Ons Winkelwagen</h1>
+  <main class="cart-page">
+    <section class="cart-panel">
+      <h1>Jouw Winkelwagen</h1>
+      <p class="cart-subtitle">Je producten blijven bewaard, ook na verversen of later terugkomen.</p>
 
-<div id="cart-items"></div>
+      <div id="cart-items" class="cart-items"></div>
 
-<p id="total-price"></p>
+      <div class="cart-summary">
+        <p id="total-price">Totaal: EUR 0.00</p>
+        <button id="clear-cart" class="clear-cart-button" type="button">Leeg winkelwagen</button>
+      </div>
 
-<a href="Assortiment.html">← Verder winkelen</a>
+      <a class="continue-shopping" href="Assortiment.html">Terug naar assortiment</a>
+    </section>
+  </main>
 
-<script src="javascript.js"></script>
+  <footer class="footer-wrapper">
+    <div class="footer-content">
+      <div class="contact-info">
+        <div>
+          <span class="contact-label">Email</span>
+          <span class="contact-separator">:</span>
+          <span class="contact-value">contact@noraflora.com</span>
+        </div>
+        <div>
+          <span class="contact-label">Telefoon</span>
+          <span class="contact-separator">:</span>
+          <span class="contact-value">06 12345678</span>
+        </div>
+        <div>
+          <span class="contact-label">Adres</span>
+          <span class="contact-separator">:</span>
+          <span class="contact-value">Zwolle, pannenkoekendijk 420 B</span>
+        </div>
+      </div>
 
+      <div class="opening-hours">
+        <h2>Openingstijden</h2>
+        <p>Ma - Vr : 12:00 - 17:00</p>
+        <p>Zaterdag : 10:00 - 17:00</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="javascript.js"></script>
 </body>
 </html>

@@ -429,3 +429,177 @@ height: 450px;
   background: #f4fff6;
 }
 
+.cart-link {
+  position: relative;
+  display: inline-block;
+}
+
+.cart-link-label {
+  display: inline-block;
+  position: relative;
+}
+
+.cart-count-badge {
+  position: absolute;
+  top: -11px;
+  right: -14px;
+  min-width: 18px;
+  height: 18px;
+  padding: 0 4px;
+  border-radius: 999px;
+  background: #d82e2e;
+  color: #fff;
+  font-size: 11px;
+  line-height: 18px;
+  font-weight: 700;
+  text-align: center;
+  border: 2px solid #2e472a;
+  display: none;
+}
+
+.add-to-cart-button {
+  margin-top: 12px;
+  padding: 10px 12px;
+  border: none;
+  border-radius: 8px;
+  background: #2f7a3b;
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.add-to-cart-button:hover {
+  background: #245f2e;
+}
+
+.cart-page {
+  background: #f7f9e8;
+  padding: 40px 16px 64px;
+}
+
+.cart-panel {
+  max-width: 980px;
+  margin: 0 auto;
+  background: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  padding: 28px;
+}
+
+.cart-panel h1 {
+  margin-bottom: 6px;
+  color: #2e472a;
+}
+
+.cart-subtitle {
+  color: #5f6f5f;
+  margin-bottom: 22px;
+}
+
+.cart-items {
+  display: grid;
+  gap: 14px;
+}
+
+.cart-item {
+  display: grid;
+  grid-template-columns: 84px 1fr auto;
+  gap: 16px;
+  align-items: center;
+  border: 1px solid #d7e8cc;
+  border-radius: 12px;
+  padding: 10px;
+  background: #f9fff4;
+}
+
+.cart-item img {
+  width: 84px;
+  height: 84px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.cart-item-name {
+  font-weight: 700;
+  color: #2e472a;
+  margin-bottom: 4px;
+}
+
+.cart-item-meta {
+  font-size: 14px;
+  color: #42603f;
+}
+
+.remove-item-button,
+.clear-cart-button {
+  border: none;
+  border-radius: 8px;
+  background: #b53a3a;
+  color: #fff;
+  font-weight: 600;
+  padding: 9px 12px;
+  cursor: pointer;
+}
+
+.remove-item-button:hover,
+.clear-cart-button:hover {
+  background: #922d2d;
+}
+
+.clear-cart-button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.cart-summary {
+  margin-top: 18px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+#total-price {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: #2e472a;
+  margin: 0;
+}
+
+.continue-shopping {
+  display: inline-block;
+  margin-top: 20px;
+  text-decoration: none;
+  color: #2f7a3b;
+  font-weight: 700;
+}
+
+.continue-shopping:hover {
+  text-decoration: underline;
+}
+
+.empty-cart {
+  background: #f0f8e7;
+  border: 1px dashed #b7cea8;
+  border-radius: 10px;
+  padding: 16px;
+  color: #45653f;
+  font-weight: 600;
+}
+
+@media (max-width: 680px) {
+  .cart-item {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .cart-item img {
+    justify-self: center;
+  }
+
+  .remove-item-button {
+    width: 100%;
+  }
+}
+
