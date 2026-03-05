@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 const plants = [
   {
     id: 1,
@@ -20,30 +18,21 @@ const plants = [
     image: "images/cactus.jpg"
   }
 ];
->>>>>>> f5af11a229aac67bb8dba315b69b7d25af2dd2ed
 const planten = [
   {
     naam: "cactus",
     prijs: 5.99,
-<<<<<<< HEAD
-    afbeelding: ""
-=======
     afbeelding: "images/cactus.jpg"
->>>>>>> f5af11a229aac67bb8dba315b69b7d25af2dd2ed
   },
   {
     naam: "zonnebloem",
     prijs: 7.50,
-<<<<<<< HEAD
-    afbeelding: ""
-=======
     afbeelding: "images/zonnebloemen.jpg"
->>>>>>> f5af11a229aac67bb8dba315b69b7d25af2dd2ed
   },
   {
     naam: "rode tulpen",
     prijs: 3.99,
-    afbeelding: ""
+    afbeelding: "images/rodetulpen.jpg"
   },
    
 ];
