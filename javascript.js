@@ -335,3 +335,6 @@ const assortiment = [
 ];
 window.addPlant = addPlant;
 addPlant("orchidee", 12.99, "images/orchidee.jpg");
+document.querySelectorAll("img").forEach(function(img) {
+  img.loading = "lazy";
+});
