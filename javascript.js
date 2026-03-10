@@ -310,3 +310,28 @@ renderCartPage();
 updateCartLinkCount();
 renderPlanten(false);
 window.addPlant = addPlant;
+
+const assortiment = [
+  {
+    naam: "cactus",
+    prijs: 5.99,
+    afbeelding: "images/cactus.jpg"
+  },
+  {
+    naam: "zonnebloem",
+    prijs: 7.5,
+    afbeelding: "images/zonnebloemen.jpg"
+  },
+  {
+    naam: "rode tulpen",
+    prijs: 3.99,
+    afbeelding: "images/rodetulpen.jpg"
+  },
+  {
+    naam: "orchidee",
+    prijs: 12.99,
+    afbeelding: "images/orchidee.jpg"
+  }
+];
+window.addPlant = addPlant;
+addPlant("orchidee", 12.99, "images/orchidee.jpg");
