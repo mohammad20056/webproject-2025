@@ -594,6 +594,7 @@ height: 450px;
 }
 
 @media (max-width: 680px) {
+
   .cart-item {
     grid-template-columns: 1fr;
     text-align: center;
@@ -606,5 +607,9 @@ height: 450px;
   .remove-item-button {
     width: 100%;
   }
-}
 
+  .assortiment-grid {
+    grid-template-columns: 1fr;
+  }
+
+}
