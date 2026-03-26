@@ -14,7 +14,7 @@ const planten = [
     naam: "rode tulpen",
     prijs: 3.99,
     afbeelding: "images/rodetulpen.jpg"
-  }
+  },
 ];
 
 function loadCart() {
@@ -338,4 +338,8 @@ addPlant("orchidee", 12.99, "images/orchidee.jpg");
 
   document.querySelectorAll("img").forEach(function(img) {
   img.loading = "lazy";
+});
+
+document.querySelectorAll(".offer-card, .about-image").forEach((element) => {
+  element.setAttribute("tabindex", "0");
 });

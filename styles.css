@@ -620,3 +620,23 @@ flex: 1;
   }
 
 }
+
+.offer-card,
+.about-image {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.offer-card:hover,
+.offer-card:focus,
+.about-image:hover,
+.about-image:focus {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+  outline: 3px solid #2f7a3b;
+  outline-offset: 3px;
+}
+
+a:focus-visible {
+  outline: 3px solid #fff;
+  outline-offset: 3px;
+}
